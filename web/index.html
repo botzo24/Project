@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class = "header">
+        <h2>TechPilot</h2>
+    </div>
+    
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="index.html">Register</a>
+        <a href="login.html">Login</a>
+    </div>
+    
+    <div class="form">
+        <p class="thick">Registration Form</p>
+        <form method="post" action="EmployeeRegister" class="myForm" id="myForm">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required><br>
+            
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="firstname" required><br>
+            
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="password" required><br>
+            
+            <label for="repeatpwd">Repeat Password</label>
+            <input type="password" id="repeatpwd" name="confirmPassword">
+            <small id="confirmPassword-feedback"></small><br>
+            
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="mail" required minlength="8">
+            <span class="error" aria-live="polite"></span><br><br>
+            
+            <input type="submit" value="Sign up">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
